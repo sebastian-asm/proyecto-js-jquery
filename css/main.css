@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/hojas.jpg');
+  background-attachment: fixed;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+#global {
+  width: 65%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 0 0 3px rgb(138, 138, 138);
+}
+
+#logo {
+  font-size: 30px;
+  letter-spacing: 4px;
+  background-color: rgb(35, 94, 61);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 550px;
+  height: 100px;
+  margin-bottom: 20px;
+  line-height: 100px;
+  float: left;
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+nav ul {
+  line-height: 46px;
+}
+nav li {
+  line-height: 46px;
+  display: inline-block;
+  transition: all .3s;
+}
+nav li:hover {
+  background-color: rgb(35, 94, 61);
+}
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
