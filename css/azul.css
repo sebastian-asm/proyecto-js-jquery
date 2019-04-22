@@ -1,0 +1,17 @@
+body {
+  background-image: url('../img/cielo.jpg');
+  background-attachment: fixed;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#logo {
+  background-color: rgb(31, 135, 196);
+}
+
+nav li:hover {
+  background-color: rgb(31, 135, 196);
+}
+
+.btn {
+  background-color: rgb(31, 135, 196);
+}

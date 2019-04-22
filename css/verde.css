@@ -1,0 +1,17 @@
+body {
+  background-image: url('../img/hojas.jpg');
+  background-attachment: fixed;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#logo {
+  background-color: rgb(35, 94, 61);
+}
+
+nav li:hover {
+  background-color: rgb(35, 94, 61);
+}
+
+.btn {
+  background-color: rgb(35, 94, 61);
+}

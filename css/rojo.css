@@ -1,0 +1,17 @@
+body {
+  background-image: url('../img/rojo.jpg');
+  background-attachment: fixed;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#logo {
+  background-color: rgb(202, 52, 19);
+}
+
+nav li:hover {
+  background-color: rgb(202, 52, 19);
+}
+
+.btn {
+  background-color: rgb(202, 52, 19);
+}

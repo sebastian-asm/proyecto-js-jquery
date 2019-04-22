@@ -44,3 +44,14 @@ posts.forEach((item) => {
   $('#posts').append(post)
 })
 
+// Seleccion de temas
+const tema = $('#tema')
+$('#verde').click(function() {
+  tema.attr('href', 'css/verde.css')
+})
+$('#rojo').click(function() {
+  tema.attr('href', 'css/rojo.css')
+})
+$('#azul').click(function() {
+  tema.attr('href', 'css/azul.css')
+})
