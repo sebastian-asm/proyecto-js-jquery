@@ -3,6 +3,7 @@
   padding: 0;
   list-style-type: none;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -150,4 +151,9 @@ footer {
   margin-top: 30px;
   line-height: 45px;
   text-align: center;
+}
+
+/* Slider */
+.bx-viewport {
+  height: 350px !important;
 }
