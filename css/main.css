@@ -55,9 +55,13 @@ nav a {
   padding-right: 30px;
 }
 
-#posts {
+#posts, #caja {
   width: 60%;
   float: left;
+}
+
+#caja {
+  margin-top: 40px;
 }
 
 .post {
@@ -171,6 +175,13 @@ footer {
 }
 #azul {
   background-color: rgb(31, 135, 196);
+}
+
+.subir {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  float: right;
 }
 
 /* Slider */
