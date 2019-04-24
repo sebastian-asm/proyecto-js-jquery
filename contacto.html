@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <!-- Slider -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="css/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/jquery-ui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="css/jquery-ui/jquery-ui.theme.min.css">
+  <script src="js/jquery-ui.min.js"></script>
 
-  <!-- Moment.js -->
-  <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+  <!-- jQuery Form Validator -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
   <!-- CSS propios -->
   <link rel="stylesheet" href="css/main.css">
@@ -45,17 +47,21 @@
       </nav>
     </header>
 
-    <div id="slider">
-      <div class="galeria">
-        <div><img src="img/hojas.jpg" title="Hojas verdes"></div>
-        <div><img src="img/rojo.jpg" title="Hojas rojos"></div>
-        <div><img src="img/cielo.jpg" title="Cielo"></div>
-      </div>
-    </div>
-
     <section id="contenedor">
-      <div id="posts">
-        <!-- Posts se cargan a traves de JSON -->
+      <div id="caja">
+        <h2 class="titulo">Formulario de contacto</h2>
+        <form action="">
+          <label>Nombre: <input type="text" name="nombre" data-validation="alphanumeric"></label>
+          <label>Email: <input type="email" name="email" data-validation="email"></label>
+          <label for="sexo">Sexo:</label>
+          <select name="sexo" id="sexo" data-validation="required">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+          </select>
+          <label>Fecha de nacimiento: <input type="text" name="nacimiento" data-validation="date" data-validation-format="dd-mm-yyyy"></label>
+          <label>Edad: <input type="number" name="edad" data-validation="number"></label>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
 
       <aside id="sidebar">

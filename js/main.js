@@ -47,8 +47,6 @@ if (window.location.href.indexOf('index') > -1) { // Solo ejecuta si esta en ind
   })
 }
 
-
-
 // Seleccion de temas
 const tema = $('#tema')
 $('#verde').click(function() {
@@ -97,4 +95,45 @@ if (nombre != null && nombre != 'undefined') {
 // Configuracion de pestañas en acerca.html
 if (window.location.href.indexOf('acerca') > -1) { // Solo se ejecuta si esta en acerca.html
   $('#acordeon').accordion()
+}
+
+// Si existe en la ruta reloj.html, se utiliza moment.js
+if (window.location.href.indexOf('reloj') > -1) {
+  // Se actualiza cada segundo
+  setInterval(() => {
+    const reloj = moment().format('hh:mm:ss a')
+    $('#reloj').html(reloj)
+  }, 1000);
+}
+
+// Validacion del formulario
+if (window.location.href.indexOf('contacto') > -1) {
+  // Configuracion de datepicker al español
+  $.datepicker.regional['es'] = {
+    closeText: 'Cerrar',
+    prevText: '< Ant',
+    nextText: 'Sig >',
+    currentText: 'Hoy',
+    monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+    dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+    dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+    dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+    weekHeader: 'Sm',
+    dateFormat: 'dd-mm-yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+  }
+  $.datepicker.setDefaults($.datepicker.regional['es'])
+
+  $("form input[name='nacimiento']").datepicker({
+    dateFormat: 'dd-mm-yy',
+  })
+
+  // Se estable el idioma del plugin de validacion
+  $.validate({
+    lang: 'es'
+  })
 }
