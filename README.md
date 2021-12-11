@@ -8,9 +8,3 @@ Este proyecto contendra principalmente lo siguiente:
 - Formulario de contacto con validación utilzando plugin de jQuery
 
 También, tendrá un enlace "arriba" con un scroll animado y suavizado que llevará a la cabecera del sitio. Y en la sección de Contacto un pequeño "acordeon" con información.
-
-Todo a prueba con jQuery.
-
-[sebastiansanchez.cl](https://sebastiansanchez.cl)
-
-:)
